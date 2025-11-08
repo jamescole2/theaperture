@@ -1,212 +1,197 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang=en>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>James Cole Photography</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <meta name="google-site-verification" content="8eoY-dBNCdSz7qUvtO3JMMMq-oSpWhFwVhN88Z7BgH8" />
-    <!-- Preload critical hero image -->
-    <link rel="preload" as="image" href="IMG_4688_signed.jpg">
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>James Cole Photography</title>
+<link rel=stylesheet href=styles.css>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel=stylesheet>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css>
+<meta name=google-site-verification content=8eoY-dBNCdSz7qUvtO3JMMMq-oSpWhFwVhN88Z7BgH8>
+<link rel=preload as=image href=IMG_4688_signed.jpg>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h2>The Aperture</h2>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="theme-toggle">
-                <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle dark mode">
-                    <i class="fas fa-moon"></i>
-                </button>
-            </div>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">The Aperture</h1>
-            <p class="hero-subtitle">Capturing moments through the lens</p>
-            <a href="#portfolio" class="cta-button">View Gallery</a>
-        </div>
-        <div class="hero-background">
-            <div class="hero-image"></div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <h2 class="section-title">Featured Portfolio</h2>
-            <p style="text-align: center; color: var(--text-secondary); margin-bottom: 3rem; font-size: 1.1rem;">
-                A curated selection of my finest work
-            </p>
-            <div class="portfolio-grid">
-                <div class="portfolio-item" data-category="landscape">
-                    <div class="portfolio-image">
-                        <img data-src="photos/img7.jpg" alt="Landscape Photography" loading="lazy" class="lazy-image">
-                        <div class="image-placeholder"></div>
-                        <div class="portfolio-overlay">
-                            <h3>Reflections</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="street">
-                    <div class="portfolio-image">
-                        <img data-src="photos/464353300_3984070621806024_5486959989990623260_n.jpg" alt="Street Photography" loading="lazy" class="lazy-image">
-                        <div class="image-placeholder"></div>
-                        <div class="portfolio-overlay">
-                            <h3>Urban Life</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="landscape">
-                    <div class="portfolio-image">
-                        <img data-src="photos/img4.jpg" alt="Landscape Photography" loading="lazy" class="lazy-image">
-                        <div class="image-placeholder"></div>
-                        <div class="portfolio-overlay">
-                            <h3>Coastal Beauty</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="nature">
-                    <div class="portfolio-image">
-                        <img data-src="photos/img3.jpg" alt="Nature Photography" loading="lazy" class="lazy-image">
-                        <div class="image-placeholder"></div>
-                        <div class="portfolio-overlay">
-                            <h3>Forest Serenity</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="street">
-                    <div class="portfolio-image">
-                        <img data-src="photos/img5.jpg" alt="Street Photography" loading="lazy" class="lazy-image">
-                        <div class="image-placeholder"></div>
-                        <div class="portfolio-overlay">
-                            <h3>City Lights</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="nature">
-                    <div class="portfolio-image">
-                        <img data-src="photos/img6.jpg" alt="Nature Photography" loading="lazy" class="lazy-image">
-                        <div class="image-placeholder"></div>
-                        <div class="portfolio-overlay">
-                            <h3>Butterfly</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div style="text-align: center; margin-top: 4rem;">
-                <a href="gallery.html" class="cta-button">View Full Gallery</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Minimal About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2 class="section-title">About</h2>
-                    <p>Dedicated to capturing authentic moments and creating visual stories through photography. Each image represents a unique perspective and emotion, carefully composed to evoke feeling and connection.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>On Instagram</h3>
-                            <p>@james.cole.2</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>Location</h3>
-                            <p>Canada</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-cards">
-                    <div class="info-card">
-                        <i class="fas fa-camera"></i>
-                        <h3>Photography Services</h3>
-                        <p>Available for printed landscape, street, and nature photography photos. Specializing in capturing the beauty of natural environments and urban scenes.</p>
-                    </div>
-                    <div class="info-card">
-                        <i class="fas fa-globe"></i>
-                        <h3>Travel & Location</h3>
-                        <p>Based in Canada. Experiencing all that the region has to offer, capturing diverse landscapes and environments across different regions.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>The Aperture</h3>
-                    <p>Capturing life's beautiful places.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Follow</h3>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/james.cole.2/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; The Aperture. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-    
-    <!-- Lightbox Overlay -->
-    <div id="lightbox" class="lightbox">
-        <span class="lightbox-close">&times;</span>
-        <img id="lightbox-img" class="lightbox-content" src="" alt="">
-        <div class="lightbox-caption"></div>
-    </div>
+<nav class=navbar>
+<div class=nav-container>
+<div class=nav-logo>
+<h2>The Aperture</h2>
+</div>
+<ul class=nav-menu>
+<li><a href=#home class=nav-link>Home</a></li>
+<li><a href=#portfolio class=nav-link>Portfolio</a></li>
+<li><a href=gallery.html class=nav-link>Gallery</a></li>
+<li><a href=#contact class=nav-link>Contact</a></li>
+</ul>
+<div class=theme-toggle>
+<button id=theme-toggle-btn class=theme-toggle-btn aria-label="Toggle dark mode">
+<i class="fas fa-moon"></i>
+</button>
+</div>
+<div class=hamburger>
+<span class=bar></span>
+<span class=bar></span>
+<span class=bar></span>
+</div>
+</div>
+</nav>
+<section id=home class=hero>
+<div class=hero-content>
+<h1 class=hero-title>The Aperture</h1>
+<p class=hero-subtitle>Capturing moments through the lens</p>
+<a href=#portfolio class=cta-button>View Gallery</a>
+</div>
+<div class=hero-background>
+<div class=hero-image></div>
+</div>
+</section>
+<section id=portfolio class=portfolio>
+<div class=container>
+<h2 class=section-title>Featured Portfolio</h2>
+<p style=text-align:center;color:var(--text-secondary);margin-bottom:3rem;font-size:1.1rem>
+A curated selection of my finest work
+</p>
+<div class=portfolio-grid>
+<div class=portfolio-item data-category=landscape>
+<div class=portfolio-image>
+<img data-src=photos/img7.jpg alt="Landscape Photography" loading=lazy class=lazy-image>
+<div class=image-placeholder></div>
+<div class=portfolio-overlay>
+<h3>Reflections</h3>
+</div>
+</div>
+</div>
+<div class=portfolio-item data-category=street>
+<div class=portfolio-image>
+<img data-src=photos/464353300_3984070621806024_5486959989990623260_n.jpg alt="Street Photography" loading=lazy class=lazy-image>
+<div class=image-placeholder></div>
+<div class=portfolio-overlay>
+<h3>Urban Life</h3>
+</div>
+</div>
+</div>
+<div class=portfolio-item data-category=landscape>
+<div class=portfolio-image>
+<img data-src=photos/img4.jpg alt="Landscape Photography" loading=lazy class=lazy-image>
+<div class=image-placeholder></div>
+<div class=portfolio-overlay>
+<h3>Coastal Beauty</h3>
+</div>
+</div>
+</div>
+<div class=portfolio-item data-category=nature>
+<div class=portfolio-image>
+<img data-src=photos/img3.jpg alt="Nature Photography" loading=lazy class=lazy-image>
+<div class=image-placeholder></div>
+<div class=portfolio-overlay>
+<h3>Forest Serenity</h3>
+</div>
+</div>
+</div>
+<div class=portfolio-item data-category=street>
+<div class=portfolio-image>
+<img data-src=photos/img5.jpg alt="Street Photography" loading=lazy class=lazy-image>
+<div class=image-placeholder></div>
+<div class=portfolio-overlay>
+<h3>City Lights</h3>
+</div>
+</div>
+</div>
+<div class=portfolio-item data-category=nature>
+<div class=portfolio-image>
+<img data-src=photos/img6.jpg alt="Nature Photography" loading=lazy class=lazy-image>
+<div class=image-placeholder></div>
+<div class=portfolio-overlay>
+<h3>Butterfly</h3>
+</div>
+</div>
+</div>
+</div>
+<div style=text-align:center;margin-top:4rem>
+<a href=gallery.html class=cta-button>View Full Gallery</a>
+</div>
+</div>
+</section>
+<section id=about class=about>
+<div class=container>
+<div class=about-content>
+<div class=about-text>
+<h2 class=section-title>About</h2>
+<p>Dedicated to capturing authentic moments and creating visual stories through photography. Each image represents a unique perspective and emotion, carefully composed to evoke feeling and connection.</p>
+</div>
+</div>
+</div>
+</section>
+<section id=contact class=contact>
+<div class=container>
+<h2 class=section-title>Get In Touch</h2>
+<div class=contact-content>
+<div class=contact-info>
+<div class=contact-item>
+<i class="fas fa-envelope"></i>
+<div>
+<h3>On Instagram</h3>
+<p>@james.cole.2</p>
+</div>
+</div>
+<div class=contact-item>
+<i class="fas fa-map-marker-alt"></i>
+<div>
+<h3>Location</h3>
+<p>Canada</p>
+</div>
+</div>
+</div>
+<div class=contact-cards>
+<div class=info-card>
+<i class="fas fa-camera"></i>
+<h3>Photography Services</h3>
+<p>Available for printed landscape, street, and nature photography photos. Specializing in capturing the beauty of natural environments and urban scenes.</p>
+</div>
+<div class=info-card>
+<i class="fas fa-globe"></i>
+<h3>Travel & Location</h3>
+<p>Based in Canada. Experiencing all that the region has to offer, capturing diverse landscapes and environments across different regions.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class=footer>
+<div class=container>
+<div class=footer-content>
+<div class=footer-section>
+<h3>The Aperture</h3>
+<p>Capturing life's beautiful places.</p>
+</div>
+<div class=footer-section>
+<h3>Quick Links</h3>
+<ul>
+<li><a href=#home>Home</a></li>
+<li><a href=#portfolio>Portfolio</a></li>
+<li><a href=gallery.html>Gallery</a></li>
+<li><a href=#contact>Contact</a></li>
+</ul>
+</div>
+<div class=footer-section>
+<h3>Follow</h3>
+<div class=social-links>
+<a href=https://www.instagram.com/james.cole.2/ target=_blank><i class="fab fa-instagram"></i></a>
+<a href=#><i class="fab fa-facebook"></i></a>
+<a href=#><i class="fab fa-twitter"></i></a>
+<a href=#><i class="fab fa-linkedin"></i></a>
+</div>
+</div>
+</div>
+<div class=footer-bottom>
+<p>&copy; The Aperture. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script src=script.js></script>
+<div id=lightbox class=lightbox>
+<span class=lightbox-close>&times;</span>
+<img id=lightbox-img class=lightbox-content src="" alt="">
+<div class=lightbox-caption></div>
+</div>
 </body>
 </html>
