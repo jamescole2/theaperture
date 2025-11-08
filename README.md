@@ -23,9 +23,9 @@ A clean, modern, and photo-focused photography portfolio website built with HTML
 ##   File Structure
 
 ```
-photography-portfolio/
+theaperture/
 ├── index.html          # Main HTML file
-├──gallery.htlm         # Main gallery file
+├── gallery.htlm         # Main gallery file
 ├── styles.css          # CSS styles and animations
 ├── script.js           # JavaScript functionality
 └── README.md           # This file
