@@ -25,6 +25,7 @@ A clean, modern, and photo-focused photography portfolio website built with HTML
 ```
 photography-portfolio/
 ├── index.html          # Main HTML file
+├──gallery.htlm         # Main gallery file
 ├── styles.css          # CSS styles and animations
 ├── script.js           # JavaScript functionality
 └── README.md           # This file
@@ -40,17 +41,6 @@ This website is designed with a **photo-first approach**:
 
 ##   Portfolio Customization
 
-### Image Requirements
-- **Recommended Size**: 800x800px or larger for optimal quality
-- **Format**: JPG, PNG, or WebP for best performance
-- **Quality**: High-resolution images that look crisp on all devices
-
-### Adding Your Photos
-1. **Upload** your photography to a hosting service
-2. **Update** the `src` attributes in the portfolio section
-3. **Modify** the `data-category` attributes for proper filtering
-4. **Customize** the overlay titles to match your work
-
 ### Portfolio Categories
 The website includes these default categories:
 - **Portrait**: People and character photography
@@ -62,20 +52,16 @@ The website includes these default categories:
 ##   Key Sections
 
 ### 1. Hero Section
-- Clean, impactful landing with a stunning background image
+- Clean, landing with a background image
 - Simple call-to-action directing visitors to your portfolio
 
 ### 2. Portfolio Gallery
 - **Large Grid Layout**: Images are prominently displayed
 - **Hover Effects**: Subtle animations that enhance user experience
-- **Category Filtering**: Easy navigation between different photo styles
-- **Responsive Design**: Adapts perfectly to all screen sizes
+- **Category Filtering**: Easy navigation between different photo styles in the gallery
+- **Responsive Design**: Adapts to all screen sizes
 
-### 3. Minimal About Section
-- Brief, professional description
-- Focus on photography philosophy rather than personal details
-
-### 4. Contact Section
+### 3. Contact Section
 - Essential contact information
 - Functional contact form for client inquiries
 
@@ -117,36 +103,16 @@ The website automatically adapts to different devices:
 2. **Update** hosting settings to use your domain
 3. **Test** website accessibility
 
-##   Contact Form
-
-The contact form includes:
-- **Form Validation**: Client-side validation for all fields
-- **Success Messages**: User feedback on form submission
-- **Responsive Design**: Works on all device sizes
-
-**Note**: The current form shows a success message but doesn't actually send emails. To make it functional, you'll need to:
-1. Add a backend service (e.g., Formspree, Netlify Forms)
-2. Or integrate with your own email service
-
-##   Browser Support
-
-- **Chrome**: 60+
-- **Firefox**: 55+
-- **Safari**: 12+
-- **Edge**: 79+
-
 ##   Future Enhancements
 
 Consider adding these features to further showcase your photography:
-- **Lightbox Gallery**: Full-screen image viewing
 - **Image Zoom**: Detailed examination of photo details
 - **Slideshow**: Automatic portfolio rotation
-- **Social Media Integration**: Direct links to your photography accounts
 - **Blog Section**: Share photography tips and stories
 
 ##   License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the [GNU GENERAL PUBLIC LICENSE](LICENSE).
 
 ##   Contributing
 
@@ -155,7 +121,7 @@ Feel free to submit issues, feature requests, or pull requests to improve this t
 ##   Support
 
 If you need help customizing or deploying this website:
-1. Check the code comments for guidance
+1. Check the code comments for guidance (if any)
 2. Review the browser console for any errors
 3. Ensure all files are properly linked
 
