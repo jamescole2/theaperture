@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - James Cole Photography</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h2>The Aperture</h2>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Section -->
+    <section id="gallery" class="portfolio" style="padding-top: 120px;">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="landscape">Landscape</button>
+                <button class="filter-btn" data-filter="street">Street</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+                <button class="filter-btn" data-filter="aviation">Aviation</button>
+            </div>
+            <!-- Portfolio Grid: Organized by category -->
+            <div class="portfolio-grid">
+                <!-- Aviation Photography -->
+                <div class="portfolio-item" data-category="aviation">
+                    <div class="portfolio-image">
+                        <img data-src="photos/img8.jpg" alt="Aviation Photography" loading="lazy" class="lazy-image">
+                        <div class="image-placeholder"></div>
+                        <div class="portfolio-overlay">
+                            <h3>Skyward Bound</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="aviation">
+                    <div class="portfolio-image">
+                        <img data-src="photos/img9.jpg" alt="Aviation Photography" loading="lazy" class="lazy-image">
+                        <div class="image-placeholder"></div>
+                        <div class="portfolio-overlay">
+                            <h3>Across the Horizon</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="aviation">
+                    <div class="portfolio-image">
+                        <img data-src="photos/img.12.jpg" alt="Aviation Photography" loading="lazy" class="lazy-image">
+                        <div class="image-placeholder"></div>
+                        <div class="portfolio-overlay">
+                            <h3>Old but Good</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="aviation">
+                    <div class="portfolio-image">
+                        <img data-src="photos/453475594_1035154847968773_580247551044488116_n.jpg" alt="Aviation Photography" loading="lazy" class="lazy-image">
+                        <div class="image-placeholder"></div>
+                        <div class="portfolio-overlay">
+                            <h3>Rescue</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Landscape Photography -->
+                <div class="portfolio-item" data-category="landscape">
+                    <div class="portfolio-image">
+                        <img data-src="photos/464366257_863691515831361_2508662437490081069_n.jpg" alt="Landscape Photography" loading="lazy" class="lazy-image">
+                        <div class="image-placeholder"></div>
+                        <div class="portfolio-overlay">
+                            <h3>Rolling Hills</h3>        
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="landscape">
+                    <div class="portfolio-image">
+                        <img data-src="photos/Peggy's Cove.jpg" alt="Landscape Photography" loading="lazy" class="lazy-image">
+                        <div class="image-placeholder"></div>
+                        <div class="portfolio-overlay">
+                            <h3>The Cove</h3>        
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="landscape">
+                    <div class="portfolio-image">
+                        <img data-src="photos/img11.jpg" alt="Landscape Photography" loading="lazy" class="lazy-image">
+                        <div class="image-placeholder"></div>
+                        <div class="portfolio-overlay">
+                            <h3>The Falling Sun</h3>        
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="landscape">
+                    <div class="portfolio-image">
+                        <img data-src="photos/IMG_4491_signed.jpg" alt="Landscape Photography" loading="lazy" class="lazy-image">
+                        <div class="image-placeholder"></div>
+                        <div class="portfolio-overlay">
+                            <h3>The End of a New Day</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Street Photography -->
+                <div class="portfolio-item" data-category="street">
+                    <div class="portfolio-image">
+                        <img data-src="photos/img10.jpg" alt="Street Photography" loading="lazy" class="lazy-image">
+                        <div class="image-placeholder"></div>
+                        <div class="portfolio-overlay">
+                            <h3>New and Old</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="street">
+                    <div class="portfolio-image">
+                        <img data-src="photos/IMG_4504_signed.jpg" alt="Street Photography" loading="lazy" class="lazy-image">
+                        <div class="image-placeholder"></div>
+                        <div class="portfolio-overlay">
+                            <h3>The Village at Night</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="street">
+                    <div class="portfolio-image">
+                        <img data-src="photos/IMG_1792 edited.png" alt="Street Photography" loading="lazy" class="lazy-image">
+                        <div class="image-placeholder"></div>
+                        <div class="portfolio-overlay">
+                            <h3>In the Alley Way</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="street">
+                    <div class="portfolio-image">
+                        <img data-src="photos/Quebec_City.jpg" alt="Street Photography" loading="lazy" class="lazy-image">
+                        <div class="image-placeholder"></div>
+                        <div class="portfolio-overlay">
+                            <h3>Quebec City</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Nature Photography -->
+                <div class="portfolio-item" data-category="nature">
+                    <div class="portfolio-image">
+                        <img data-src="photos/IMG_4281.png" alt="Nature Photography" loading="lazy" class="lazy-image">
+                        <div class="image-placeholder"></div>
+                        <div class="portfolio-overlay">
+                            <h3>Wildlife of all Sizes</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="nature">
+                    <div class="portfolio-image">
+                        <img data-src="photos/IMG_4291.png" alt="Nature Photography" loading="lazy" class="lazy-image">
+                        <div class="image-placeholder"></div>
+                        <div class="portfolio-overlay">
+                            <h3>Best Friends</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="nature">
+                    <div class="portfolio-image">
+                        <img data-src="photos/IMG_4402.png" alt="Nature Photography" loading="lazy" class="lazy-image">
+                        <div class="image-placeholder"></div>
+                        <div class="portfolio-overlay">
+                            <h3>Going Solo</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="nature">
+                    <div class="portfolio-image">
+                        <img data-src="photos/IMG_1513 edited.png" alt="Nature Photography" loading="lazy" class="lazy-image">
+                        <div class="image-placeholder"></div>
+                        <div class="portfolio-overlay">
+                            <h3>Little Guy</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>The Aperture</h3>
+                    <p>Capturing life's beautiful places.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/james.cole.2/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; The Aperture. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <!-- Lightbox Overlay -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-img" class="lightbox-content" src="" alt="">
+        <div class="lightbox-caption"></div>
+    </div>
+</body>
+</html>
+
