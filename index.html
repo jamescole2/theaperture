@@ -5,7 +5,8 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <title>James Cole Photography</title>
 <link rel=stylesheet href=styles.css>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel=stylesheet>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&family=Yatra+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Charm&family=Rubik+80s+Fade&display=swap" rel="stylesheet">
 <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css>
 <meta name=google-site-verification content=8eoY-dBNCdSz7qUvtO3JMMMq-oSpWhFwVhN88Z7BgH8>
 <link rel=preload as=image href=IMG_4688_signed.jpg>
@@ -53,7 +54,7 @@ A diverse selection of my work
 <div class=portfolio-grid>
 <div class=portfolio-item data-category=landscape>
 <div class=portfolio-image>
-<img data-src=photos/img7.jpg alt="Landscape Photography" loading=lazy class=lazy-image>
+<img src="photos/img7.jpg" data-src="photos/img7.jpg" alt="Landscape Photography" loading=lazy class=lazy-image data-exif-camera="Canon 2000D" data-exif-lens="RF 15-35mm f/2.8" data-exif-focal-length="15mm" data-exif-aperture="f/11" data-exif-shutter="1/125s" data-exif-iso=100 data-no-exif="true">
 <div class=image-placeholder></div>
 <div class=portfolio-overlay>
 <h3>Reflections</h3>
@@ -62,7 +63,7 @@ A diverse selection of my work
 </div>
 <div class=portfolio-item data-category=street>
 <div class=portfolio-image>
-<img data-src=photos/464353300_3984070621806024_5486959989990623260_n.jpg alt="Street Photography" loading=lazy class=lazy-image>
+<img src="photos/464353300_3984070621806024_5486959989990623260_n.jpg" data-src="photos/464353300_3984070621806024_5486959989990623260_n.jpg" alt="Street Photography" loading=lazy class=lazy-image data-exif-camera="Canon 2000D" data-exif-lens="35mm f/1.4 GM" data-exif-focal-length="35mm" data-exif-aperture="f/1.8" data-exif-shutter="1/200s" data-exif-iso=200 data-no-exif="true">
 <div class=image-placeholder></div>
 <div class=portfolio-overlay>
 <h3>Urban Life</h3>
@@ -71,7 +72,7 @@ A diverse selection of my work
 </div>
 <div class=portfolio-item data-category=landscape>
 <div class=portfolio-image>
-<img data-src=photos/img4.jpg alt="Landscape Photography" loading=lazy class=lazy-image>
+<img src="photos/img4.jpg" data-src="photos/img4.jpg" alt="Landscape Photography" loading=lazy class=lazy-image data-exif-camera="Canon 2000D" data-exif-lens="XF 16-55mm f/2.8" data-exif-focal-length="20mm" data-exif-aperture="f/8" data-exif-shutter="1/400s" data-exif-iso=160 data-no-exif="true">
 <div class=image-placeholder></div>
 <div class=portfolio-overlay>
 <h3>Coastal Beauty</h3>
@@ -80,7 +81,7 @@ A diverse selection of my work
 </div>
 <div class=portfolio-item data-category=nature>
 <div class=portfolio-image>
-<img data-src=photos/img3.jpg alt="Nature Photography" loading=lazy class=lazy-image>
+<img src="photos/img3.jpg" data-src="photos/img3.jpg" alt="Nature Photography" loading=lazy class=lazy-image data-exif-camera="Canon 2000D" data-exif-lens="NIKKOR Z 24-70mm f/2.8" data-exif-focal-length="50mm" data-exif-aperture="f/4" data-exif-shutter="1/60s" data-exif-iso=400 data-no-exif="true">
 <div class=image-placeholder></div>
 <div class=portfolio-overlay>
 <h3>Forest Serenity</h3>
@@ -89,7 +90,7 @@ A diverse selection of my work
 </div>
 <div class=portfolio-item data-category=street>
 <div class=portfolio-image>
-<img data-src=photos/img5.jpg alt="Street Photography" loading=lazy class=lazy-image>
+<img src="photos/img5.jpg" data-src="photos/img5.jpg" alt="Street Photography" loading=lazy class=lazy-image data-exif-camera="Canon 2000D" data-exif-lens="RF 50mm f/1.2" data-exif-focal-length="50mm" data-exif-aperture="f/1.4" data-exif-shutter="1/100s" data-exif-iso=800 data-no-exif="true">
 <div class=image-placeholder></div>
 <div class=portfolio-overlay>
 <h3>City Lights</h3>
@@ -98,7 +99,7 @@ A diverse selection of my work
 </div>
 <div class=portfolio-item data-category=nature>
 <div class=portfolio-image>
-<img data-src=photos/img6.jpg alt="Nature Photography" loading=lazy class=lazy-image>
+<img src="photos/img6.jpg" data-src="photos/img6.jpg" alt="Nature Photography" loading=lazy class=lazy-image data-exif-camera="Canon 2000D" data-exif-lens="60mm f/2.8 Macro" data-exif-focal-length="60mm" data-exif-aperture="f/3.5" data-exif-shutter="1/500s" data-exif-iso=200 data-no-exif="true">
 <div class=image-placeholder></div>
 <div class=portfolio-overlay>
 <h3>Butterfly</h3>
@@ -190,8 +191,16 @@ A diverse selection of my work
 <script src=script.js></script>
 <div id=lightbox class=lightbox>
 <span class=lightbox-close>&times;</span>
-<img id=lightbox-img class=lightbox-content src="" alt="">
-<div class=lightbox-caption></div>
+<div class=lightbox-wrapper>
+<div class=lightbox-content><img id=lightbox-img src="" alt=""></div>
+<div id=lightbox-info class=lightbox-info>
+<h3 id=lightbox-caption-title></h3>
+<ul id=exif-data></ul>
+</div>
+</div>
+<button id=lightbox-info-toggle class=lightbox-info-toggle aria-label="Toggle EXIF data">
+<i class="fas fa-info-circle"></i>
+</button>
 </div>
 </body>
 </html>
